@@ -8,10 +8,7 @@
 
 class Computer{
 private:
-	void seleccionComponentes();
-	void ensambleComponentes();
-	void configSoftware();
-	void empaquetamiento();
+	void procesoCreacion(char type);
 public:
 	void createLaptop();
 	void createDesktop();

@@ -1,9 +1,9 @@
 #ifndef DESKTOP_H
 #define DESKTOP_H
 
-#include "Computer.h"
+#include "Clon.h"
 
-class Desktop : public Computer{
+class Desktop : public Clon<Computer, Desktop>{
 private:
 	Desktop(){}
 public:

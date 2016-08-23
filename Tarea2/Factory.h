@@ -1,7 +1,7 @@
 #ifndef FACTORY_H
 #define FACTORY_H
 
-#include "Computer.h"
+#include "Clon.h"
 
 class Factory{
 protected:

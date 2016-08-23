@@ -1,9 +1,9 @@
 #ifndef TABLET_H
 #define TABLET_H
 
-#include "Computer.h"
+#include "Clon.h"
 
-class Tablet : public Computer{
+class Tablet : public Clon<Computer, Tablet>{
 private:
 	Tablet(){}
 public:

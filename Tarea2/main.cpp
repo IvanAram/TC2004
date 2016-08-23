@@ -1,4 +1,4 @@
-#include "Computer.h"
+#include "Clon.h"
 #include "ConcreteFactory.h"
 
 int main(){

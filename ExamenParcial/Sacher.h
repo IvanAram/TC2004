@@ -7,6 +7,8 @@
 class Sacher : public Clon<Pastel, Sacher>{
 public:
 	void crearPastel();
+	std::string getName() { return name; }
+	void setName(std::string _name) { name = _name; }
 };
 
 void Sacher::crearPastel(){

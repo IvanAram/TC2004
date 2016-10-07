@@ -7,6 +7,8 @@
 class TresLeches : public Clon<Pastel, TresLeches>{
 public:
 	void crearPastel();
+	std::string getName() { return name; }
+	void setName(std::string _name) { name = _name; }
 };
 
 void TresLeches::crearPastel(){

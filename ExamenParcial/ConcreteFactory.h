@@ -16,7 +16,7 @@ public:
 };
 
 Pastel* ConcreteFactory::factoryMethod(std::string tipo){
-	if(tipo=="TresLeches") return new TresLeches; 
+	if(tipo=="TresLeches" || tipo=="Tres Leches") return new TresLeches; 
 	else if(tipo=="Sacher") return new Sacher;
 	else if(tipo=="Imposible") return new Imposible;
 	else return nullptr;

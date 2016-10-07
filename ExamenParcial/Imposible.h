@@ -7,6 +7,8 @@
 class Imposible : public Clon<Pastel, Imposible>{
 public:
 	void crearPastel();
+	std::string getName() { return name; }
+	void setName(std::string _name) { name = _name; }
 };
 
 void Imposible::crearPastel(){

@@ -2,7 +2,6 @@
 #include <iostream>
 #include "Noticiero.h"
 
-template <class T>
 class MVS : public Noticiero{
 public:
     MVS() {}

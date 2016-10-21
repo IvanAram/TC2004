@@ -4,7 +4,7 @@
 #include "LinkedList.h"
 
 class Noticiero{
-private:
+protected:
     std::string noticia;
     LinkedList<Presidente*> presidentes;
 public:

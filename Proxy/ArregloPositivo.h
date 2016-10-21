@@ -1,19 +1,33 @@
 #pragma once
+#include "Proxy.h"
 #include <iostream>
 
-class Proxy;
-
-class ArregloPositivo {
+class ArrayPositiveInts{
 private:
-	Proxy& proxy;
-	int* values;
-	int size;
+    Proxy* temp;
+    int* values;
+    int size;
 public:
-	friend class Proxy;
-	ArregloPositivo():size(100),values(new int[size]){}
-	Proxy& operator[] (int number);
+    friend class Proxy;
+    ArrayPositiveInts()
+    {
+        size = 100;
+        values = new int[size];
+    }
+    int& operator[](int idx)
+    {
+        temp = new Proxy(*this, idx);
+        return values[idx];
+    }
 };
 
-Proxy& ArregloPositivo::operator[] (int number){
-	return Proxy(*this, number);
+Proxy& Proxy::operator=(int value){
+    if(value>=0){
+        *(arr.values + idx) = value;
+        *this;
+    }
+    else{
+        cout << "error" << endl;
+        return *this;
+    }
 }

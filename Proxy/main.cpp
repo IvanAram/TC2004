@@ -2,6 +2,7 @@
 #include "ArregloPositivo.h"
 
 int main(){
-	//ArregloPositivo a1;
-	//a1[0] = 1;
+    ArrayPositiveInts a;
+    a[0]=-1;
+    //cout << a[0] << endl;
 }

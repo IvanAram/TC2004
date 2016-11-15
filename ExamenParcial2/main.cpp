@@ -9,5 +9,9 @@
 #include "CNNnoticias.h"
 
 int main(){
-
+    Noticiero* mvs = new MVS();
+    Presidente* pena = new Pena(mvs, "Pena Nieto");
+    mvs->setNoticia("Infracstuctochor");
+    mvs->publicar();
+    
 }

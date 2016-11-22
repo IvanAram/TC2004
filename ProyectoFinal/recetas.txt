@@ -1,0 +1,6 @@
+5
+chilaquiles 100
+huevos 50
+jugo_naranja 25
+milanesa 120
+quesadillas 10
